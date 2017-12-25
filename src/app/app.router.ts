@@ -1,16 +1,29 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ResumeComponent } from './components/resume/resume.component';
+import { AboutComponent } from './components/about/about.component';
 
 const router: Routes = [
     {
         path: '',
-        redirectTo: '/home',
+        redirectTo: '/about',
         pathMatch: 'full'
     },
     {
-        path: 'resume',
-        component: ResumeComponent
+        path: 'about',
+        component: AboutComponent,
+        children: [
+            {
+                path: '',
+                redirectTo: '/about',
+                pathMatch: 'full'
+            },
+            {
+                path: 'resume',
+                component: ResumeComponent
+            },
+
+        ] 
     },
 ];
 
