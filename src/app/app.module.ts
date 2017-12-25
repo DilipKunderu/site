@@ -8,10 +8,14 @@ import { routes } from './app.router';
 
 import { AppComponent } from './app.component';
 import { MatIconRegistry } from '@angular/material';
+import { ResumeComponent } from './components/resume/resume.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ResumeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
