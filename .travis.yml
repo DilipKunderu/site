@@ -15,7 +15,7 @@ cache:
     - node_modules
  
 script:
-  - npm run build.prod
+  - npm run build.prod.firebase
 
 after_success:
   - firebase deploy --token $FIREBASE_TOKEN
