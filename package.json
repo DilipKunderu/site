@@ -9,7 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build.prod": "ng build --aot --prod --progress false --base-href \"https://dilipkunderu.github.io/site/\""
+    "build.prod": "ng build --aot --prod --progress false --base-href \"https://dilipkunderu.github.io/site/\"",
+    "build.prod.firebase": "ng build --aot --prod --progress false"
 
   },
   "private": true,
